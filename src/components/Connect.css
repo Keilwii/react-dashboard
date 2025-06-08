@@ -1,0 +1,9 @@
+.top-bar {
+    background-color: #1a1a1a; /* Dark background */
+    padding: 10px 20px;      /* Padding around the content */
+    display: flex;
+    justify-content: flex-end; /* Aligns children (the button) to the right */
+    align-items: center;       /* Vertically aligns children in the center */
+    width: 100%;               /* Makes the bar span the full width */
+    box-sizing: border-box;    /* Ensures padding doesn't add to the total width */
+} 

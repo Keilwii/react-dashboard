@@ -1,0 +1,80 @@
+/* Menu container */
+.menu-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px; /* Standard height for a bottom nav bar */
+  background-color: #2d2d2d; /* Dark background */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-around; /* Distribute items, but we'll center the plus button */
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Base style for nav links */
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #a0a0a0; /* Default icon/text color */
+  text-decoration: none;
+  font-size: 0.75rem; /* Small text under icon */
+  flex-grow: 1; /* Allow items to take up space */
+  transition: color 0.2s ease-in-out;
+}
+
+.menu-link.active {
+  color: var(--accent-color); /* Active link color */
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active span {
+    color: var(--accent-color);
+}
+
+.menu-link:hover {
+  color: #ffffff;
+}
+
+.menu-icon {
+  font-size: 1.5rem; /* Icon size */
+  margin-bottom: 2px;
+  /* color: white; */ /* This will be inherited now */
+}
+
+/* Special styling for the central submission button */
+.submission-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center the button */
+  bottom: 3rem; /* Raise it slightly above the bar */
+  width: 2.5rem; /* Larger size */
+  height: 2.5rem;
+  background-color: #00c853; /* Green color from your app's theme */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1001; /* Ensure it's above the menu bar */
+}
+
+.submission-link:hover {
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 200, 83, 0.5);
+}
+
+.submission-icon {
+  font-size: 1.5rem; /* Larger icon size */
+  color: white;
+}
+
+:root {
+  --accent-color: #00c853; /* Example accent color (green) */
+}
+
+/* Placeholder to take up space behind the submission button */

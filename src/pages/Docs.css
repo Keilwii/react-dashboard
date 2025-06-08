@@ -1,0 +1,28 @@
+/* Custom styles for the Docs page, specifically for tables */
+
+.docs-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.docs-table th,
+.docs-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #4a5568; /* a gray shade */
+}
+
+.docs-table th {
+  background-color: #2d3748; /* a darker gray for the header */
+  font-weight: 600;
+  color: #e2e8f0; /* a light gray for header text */
+}
+
+.docs-table td {
+  color: #cbd5e0; /* slightly lighter gray for body text */
+}
+
+.docs-table tbody tr:last-child td {
+  border-bottom: none;
+} 
