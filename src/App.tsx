@@ -9,6 +9,7 @@ import Submission from './pages/Submission';
 import Profile from './pages/Profile';
 import Rewards from './pages/Rewards';
 import { Connect } from './components/Connect';
+import './styles.css';
 
 const AppContent = () => {
     const { account, connection } = useWallet();
@@ -65,7 +66,7 @@ const AppContent = () => {
     return (
         <div className="body">
             <Connect />
-            <main className="container mx-auto px-4 py-8 flex-grow pb-28">
+            <main className="main-content">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/docs" element={<Docs />} />

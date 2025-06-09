@@ -2,12 +2,12 @@ import React from 'react';
 import './Home.css'; // Import the new CSS file
 
 // Import assets
-import thumbsUpIcon from '../assets/thumbs-up.svg';
-import veDucksLogo from '../assets/veducks-logo.png';
-import xLogo from '../assets/X-logo-white.png';
-import discordLogo from '../assets/discord-logo.png';
+const thumbsUpIcon = new URL('../assets/thumbs-up.svg', import.meta.url).href;
+const veDucksLogo = new URL('../assets/veducks-logo.png', import.meta.url).href;
+const xLogo = new URL('../assets/X-logo-white.png', import.meta.url).href;
+const discordLogo = new URL('../assets/discord-logo.png', import.meta.url).href;
 import '../styles.css';
-import { FaCheck } from 'react-icons/fa';
+import { FaCheck, FaLink } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -39,8 +39,7 @@ const Home = () => {
             </ul>
             {/* The button was inside veducks-info in the original HTML, moved it outside to match structure of other cards if it was a typo, but here it is inside again to match provided HTML.*/}
              <a href="https://worldofv.art/business/claim/veducks" target="_blank" rel="noopener noreferrer" className="veducks-button">
-                <span>Mint Your VeDucks NFT</span>
-                <i className="fas fa-external-link-alt"></i>
+                <span>Mint Your VeDucks NFT <FaLink /></span>
             </a>
           </div>
         </div>

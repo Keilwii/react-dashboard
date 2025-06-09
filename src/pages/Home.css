@@ -130,6 +130,20 @@
     }
 }
 
+.veducks-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    background: #2d2d2d;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 15px rgba(0, 200, 83, 0.2);
+}
+
 /* Section Title */
 .section-title {
     font-size: 1.5rem;
@@ -149,7 +163,7 @@
     flex-direction: column;
     gap: 1rem;
     animation: fadeInUp 1.4s ease-out;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 }
 
 .social-link {
@@ -273,8 +287,10 @@
     transform: translateY(-2px);
 }
 
-.veducks-button i { /* Styling for Font Awesome icon in button */
-    font-size: 0.9em; /* Slightly smaller icon relative to text */
+.veducks-button span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Adjust gap as needed */
 }
 
 

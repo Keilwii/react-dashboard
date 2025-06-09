@@ -9,4 +9,42 @@
   background-color: #1a1a1a;
 }
 
+.main-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 2rem; /* py-8 */
+    flex-grow: 1; /* flex-grow */
+    padding-bottom: 5rem; /* pb-28, overrides py-8 for bottom */
+}
+
+/* Set max-width for different screen sizes, equivalent to 'container' */
+@media (min-width: 640px) {
+    .main-content {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .main-content {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .main-content {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .main-content {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .main-content {
+        max-width: 1536px;
+    }
+}
+
 
