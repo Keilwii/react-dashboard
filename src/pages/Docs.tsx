@@ -8,10 +8,6 @@ const Docs = () => {
       <h1 className="text-4xl font-bold mb-4 text-center">
         VeRecycle Docs
       </h1>
-      <p className="text-lg text-gray-400 mb-8 text-center">
-        A quick overview of how our dApp works on a more intimate level. We are part of the VeBetterDAO platform, promoting sustainable actions through our Recycle 2 EARN model.
-      </p>
-
       <div className="space-y-4">
         {/* BASICS Section */}
         <h2 className="text-2xl font-bold mt-8 mb-4 border-l-4 border-green-500 pl-4">Basics</h2>
